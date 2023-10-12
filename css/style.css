@@ -67,10 +67,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-.choice {
-  color: #404bbf;
-  position: relative;
-}
+
 .choice::after {
   content: "";
   position: absolute;
@@ -80,6 +77,10 @@ img {
   background-color: #404bbf;
   border-radius: 2px;
   width: 100%;
+}
+.choice {
+  color: #404bbf;
+  position: relative;
 }
 .header-menu-list {
   color: #2e2f42;
@@ -94,6 +95,10 @@ img {
 .header-menu-item {
   display: flex;
   align-items: center;
+}
+.header-menu-item:hover,
+.header-menu-item:focus {
+  color: #404bbf;
 }
 .header-menu-link {
   color: #2e2f42;
