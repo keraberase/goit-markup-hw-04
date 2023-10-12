@@ -67,21 +67,6 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-
-.choice::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -1px;
-  height: 4px;
-  background-color: #404bbf;
-  border-radius: 2px;
-  width: 100%;
-}
-.choice {
-  position: relative;
-  color: #404bbf;
-}
 .header-menu-list {
   color: #2e2f42;
   font-size: 16px;
@@ -96,10 +81,7 @@ img {
   display: flex;
   align-items: center;
 }
-.header-menu-item:hover,
-:focus {
-  color: #404bbf;
-}
+
 .header-menu-link {
   color: #2e2f42;
 
@@ -112,6 +94,20 @@ img {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
+}
+.current {
+  position: relative;
+  color: #404bbf;
+}
+.current::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 4px;
+  background-color: #404bbf;
+  border-radius: 2px;
+  width: 100%;
 }
 .header-menu-link:hover,
 .header-menu-link:focus {
